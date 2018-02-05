@@ -1,0 +1,30 @@
+<div style="width: 100%;overflow: auto;position: relative;height: auto; margin-top: 70px;">
+	<!--  D:\Yashwanth\D Drive\Apache\apache-tomcat-7.0.37\webapps\ROOT\webodf.js-0.5.9
+  http://viewerjs.org/examples/
+  
+  -->
+	<script src="http://localhost:8080/webodf.js-0.5.9/webodf.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		function init() {
+		  var odfelement = document.getElementById("odf"),
+			  odfcanvas = new odf.OdfCanvas(odfelement);
+		  odfcanvas.load("http://localhost:8080/webodf.js-0.5.9/#../java-a-beginners-guide-1720064.pdf");
+		}
+		window.setTimeout(init, 0);
+  </script>
+  
+	<div style="float: left;width: 49%; overflow: auto;position: relative;height: auto;">
+		<iframe src="http://viewerjs.org/ViewerJS/#/OpenDocument-v1.2.odt" width="100%" height="450px" allowfullscreen="" webkitallowfullscreen=""></iframe>
+		
+		<p><a href="http://viewerjs.org/" target="_blank">ViewerJS</a> must be the easiest way to use presentations, spreadsheets, PDF's.</p>
+	</div>
+
+	<div style="float: left; width: 10%; background-color: red;"></div>
+	
+	<div style="float: left;width: 49%; ">
+		<div id="odf" ><div/>
+		
+		<p><a href="https://stackoverflow.com/tags/webodf/info" target="_blank">WebODF</a> is a javascript library to open and edit open document format files.<a href="http://www.webodf.org/demo/ci/wodotexteditor-0.5.9/localeditor.html"><sup>wodotexteditor</sup></a></p>
+	</div>
+</div>
